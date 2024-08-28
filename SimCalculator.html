@@ -12,49 +12,54 @@
     
     <div class="container">
         <div class="screen">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="output">
         </div>
         <div class="btns">
 
             <div class="row0 rows">
-                <input type="button" value="(">
-                <input type="button" value=")">
-                <input type="button" value="%">
-                <input type="button" value="AC">
+                <input type="button" value="AC"  onclick="clearInput()">
+                <input type="button" value="⌫" onclick="backSpace()">
+                <input type="button" value="%"  onclick="btnClick(this.value)">
+                <input type="button" value="/"  onclick="btnClick(this.value)">
+
             </div>
             
             <div class="row1 rows">
-                <input type="button" value="9">
-                <input type="button" value="8">
-                <input type="button" value="7">
-                <input type="button" value="/">
+                <input type="button" value="8"  onclick="btnClick(this.value)">
+                <input type="button" value="9"  onclick="btnClick(this.value)">
+                <input type="button" value="7"  onclick="btnClick(this.value)">
+                <input type="button" value="*"  onclick="btnClick(this.value)">
             </div>
 
             <div class="row2 rows">
-                <input type="button" value="6">
-                <input type="button" value="5">
-                <input type="button" value="4">
-                <input type="button" value="*">
+                <input type="button" value="6"  onclick="btnClick(this.value)">
+                <input type="button" value="5"  onclick="btnClick(this.value)">
+                <input type="button" value="4"  onclick="btnClick(this.value)">
+                <input type="button" value="-"  onclick="btnClick(this.value)">
             </div>
 
             <div class="row3 rows">
-                <input type="button" value="3">
-                <input type="button" value="2">
-                <input type="button" value="1">
-                <input type="button" value="-">
+                <input type="button" value="3"  onclick="btnClick(this.value)">
+                <input type="button" value="2"  onclick="btnClick(this.value)">
+                <input type="button" value="1"  onclick="btnClick(this.value)">
+                <input type="button" value="+"  onclick="btnClick(this.value)">
             </div>
 
      
             <div class="row4 rows">
-                <input type="button" value="0">
-                <input type="button" value=".">
-                <input type="button" id="equal" value="=">
-                <input type="button" value="+">
+                <input type="button" value="0"  onclick="btnClick(this.value)">
+                <input type="button" value="00"  onclick="btnClick(this.value)">
+                <input type="button" value="."  onclick="btnClick(this.value)">
+                <input type="button" value="="  onclick="equal()"  id="equal" >
             </div>
 
         </div>
     </div>
 
+
+
+
+    <script src="srcipt.js"></script>
 
 </body>
 
